@@ -1,5 +1,6 @@
 body {
   padding-top: 50px;
+  padding-bottom: 100px;
 }
 
 .masthead {
@@ -11,6 +12,8 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   height: 75vh;
+  -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+          box-shadow: inset 0 0 100px rgba(0,0,0,.5);
 
   color: #eee;
   text-shadow: black 0.3em 0.3em 0.3em;
@@ -20,4 +23,16 @@ body {
 .section-header {
   background-color: #197519;
   color: #eee
+}
+
+.marketing .col-lg-4 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.marketing h2 {
+  font-weight: normal;
+}
+.marketing .col-lg-4 p {
+  margin-right: 10px;
+  margin-left: 10px;
 }
