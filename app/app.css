@@ -1,11 +1,20 @@
 body {
   padding-top: 50px;
 }
-.starter-template {
-  padding: 40px 15px;
+
+.masthead {
+  margin-bottom: 0px;
+  background-color: #eee;
+  background-image: url(img/bg.jpg);
+  background-position: 0% 25%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #eee;
+  text-shadow: black 0.3em 0.3em 0.3em;
   text-align: center;
 }
-.jumbotron {
+
+.section-header {
   background-color: #197519;
   color: #eee
 }
