@@ -11,6 +11,10 @@ angular.module('myApp.about', ['ngRoute'])
     templateUrl: 'about/contact.html',
     controller: 'AboutCtrl'
   });
+  $routeProvider.when('/legal', {
+    templateUrl: 'about/legal.html',
+    controller: 'AboutCtrl'
+  });
 }])
 
 .controller('AboutCtrl', [function() {
