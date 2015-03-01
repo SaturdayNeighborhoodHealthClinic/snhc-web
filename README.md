@@ -1,43 +1,27 @@
-# angular-seed — the seed for AngularJS apps
+# snhc-web the web frontend for the SNHC website.
 
-This project is an application skeleton for a typical [AngularJS](http://angularjs.org/) web app.
-You can use it to quickly bootstrap your angular webapp projects and dev environment for these
-projects.
-
-The seed contains a sample AngularJS application and is preconfigured to install the Angular
-framework and a bunch of development and testing tools for instant web development gratification.
-
-The seed app doesn't do much, just shows how to wire two controllers and views together.
-
+Our public-facing website. Seeded using the [angular-seed](https://github.com/angular/angular-seed) repository.
 
 ## Getting Started
 
-To get you started you can simply clone the angular-seed repository and install the dependencies:
+To get you started you can simply clone our repository and install the dependencies.
 
 ### Prerequisites
 
-You need git to clone the angular-seed repository. You can get git from
+You need git to clone the our repository. You can get git from
 [http://git-scm.com/](http://git-scm.com/).
 
-We also use a number of node.js tools to initialize and test angular-seed. You must have node.js and
+We also use a number of node.js tools to initialize run our site. You must have node.js and
 its package manager (npm) installed.  You can get them from [http://nodejs.org/](http://nodejs.org/).
 
 ### Clone angular-seed
 
-Clone the angular-seed repository using [git][git]:
+Clone us with:
 
 ```
-git clone https://github.com/angular/angular-seed.git
-cd angular-seed
+git clone https://github.com/justinrporter/snhc-web.git
+cd snhc-web
 ```
-
-If you just want to start a new project without the angular-seed commit history then you can do:
-
-```bash
-git clone --depth=1 https://github.com/angular/angular-seed.git <your-project-name>
-```
-
-The `depth=1` tells git to only pull down one commit worth of historical data.
 
 ### Install Dependencies
 
@@ -75,7 +59,6 @@ npm start
 Now browse to the app at `http://localhost:8000/app/index.html`.
 
 
-
 ## Directory Layout
 
 ```
@@ -89,14 +72,10 @@ app/                    --> all of the source files for the application
       version-directive_test.js  --> version directive tests
       interpolate-filter.js      --> custom interpolation filter
       interpolate-filter_test.js --> interpolate filter tests
-  view1/                --> the view1 view template and logic
-    view1.html            --> the partial template
-    view1.js              --> the controller logic
-    view1_test.js         --> tests of the controller
-  view2/                --> the view2 view template and logic
-    view2.html            --> the partial template
-    view2.js              --> the controller logic
-    view2_test.js         --> tests of the controller
+  partials/             --> the html partials used in the body
+  js/                   --> the javascript files used to 
+    routing.js            --> the controller logic for the ng-view
+    date-ctrl.js          --> logic for the dynamic google calendar display in services.html
   app.js                --> main application module
   index.html            --> app layout file (the main html template file of the app)
   index-async.html      --> just like index.html, but loads js files asynchronously
@@ -108,7 +87,9 @@ e2e-tests/            --> end-to-end tests
 
 ## Testing
 
-There are two kinds of tests in the angular-seed application: Unit tests and End to End tests.
+There are two kinds of tests in the snhc-web application: Unit tests and End to End tests.
+
+They're copied from the angular-seed app, and don't work right now. The rest of this section is copypasta.
 
 ### Running Unit Tests
 
@@ -178,9 +159,8 @@ development server.
 
 ## Updating Angular
 
-Previously we recommended that you merge in changes to angular-seed into your own fork of the project.
-Now that the angular framework library code and tools are acquired through package managers (npm and
-bower) you can use these tools instead to update the dependencies.
+The angular framework library code and tools are acquired through package managers (npm and
+bower), so you can use these tools instead to update the dependencies.
 
 You can update the tool dependencies by running:
 
