@@ -23,7 +23,7 @@ angular.module('myApp.routing', ['ngRoute'])
     templateUrl: 'partials/home.html',
     controller: 'RoutingCtrl'
   });
-  $routeProvider.when('/about', {
+  $routeProvider.when('/services', {
     templateUrl: 'partials/services.html',
     controller: 'RoutingCtrl'
   });
@@ -33,6 +33,10 @@ angular.module('myApp.routing', ['ngRoute'])
   });
   $routeProvider.when('/legal', {
     templateUrl: 'partials/legal.html',
+    controller: 'RoutingCtrl'
+  });
+  $routeProvider.when('/faq', {
+    templateUrl: 'partials/faq.html',
     controller: 'RoutingCtrl'
   });
   $routeProvider.otherwise({redirectTo: '/home'});
