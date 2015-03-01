@@ -23,6 +23,18 @@ angular.module('myApp.routing', ['ngRoute'])
     templateUrl: 'home/home.html',
     controller: 'RoutingCtrl'
   });
+  $routeProvider.when('/about', {
+    templateUrl: 'about/services.html',
+    controller: 'RoutingCtrl'
+  });
+  $routeProvider.when('/contact', {
+    templateUrl: 'about/contact.html',
+    controller: 'RoutingCtrl'
+  });
+  $routeProvider.when('/legal', {
+    templateUrl: 'about/legal.html',
+    controller: 'RoutingCtrl'
+  });
 }])
 
 .controller('RoutingCtrl', [function() {
