@@ -1,4 +1,4 @@
-# snhc-web the web frontend for the SNHC website.
+# snhc-web: the web frontend for the SNHC.
 
 Our public-facing website. Seeded using the [angular-seed](https://github.com/angular/angular-seed) repository.
 
