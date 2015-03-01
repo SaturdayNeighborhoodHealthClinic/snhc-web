@@ -4,35 +4,35 @@ angular.module('myApp.routing', ['ngRoute'])
 
 .config(['$routeProvider', function($routeProvider) {
   $routeProvider.when('/medstudents', {
-    templateUrl: 'volunteers/medstudents.html',
+    templateUrl: 'partials/medstudents.html',
     controller: 'RoutingCtrl'
   });
   $routeProvider.when('/physicians', {
-    templateUrl: 'volunteers/physicians.html',
+    templateUrl: 'partials/physicians.html',
     controller: 'RoutingCtrl'
   });
   $routeProvider.when('/socialwork', {
-    templateUrl: 'volunteers/socialwork.html',
+    templateUrl: 'partials/socialwork.html',
     controller: 'RoutingCtrl'
   });
   $routeProvider.when('/occupationaltherapy', {
-    templateUrl: 'volunteers/occupationaltherapy.html',
+    templateUrl: 'partials/occupationaltherapy.html',
     controller: 'RoutingCtrl'
   });
   $routeProvider.when('/home', {
-    templateUrl: 'home/home.html',
+    templateUrl: 'partials/home.html',
     controller: 'RoutingCtrl'
   });
   $routeProvider.when('/about', {
-    templateUrl: 'about/services.html',
+    templateUrl: 'partials/services.html',
     controller: 'RoutingCtrl'
   });
   $routeProvider.when('/contact', {
-    templateUrl: 'about/contact.html',
+    templateUrl: 'partials/contact.html',
     controller: 'RoutingCtrl'
   });
   $routeProvider.when('/legal', {
-    templateUrl: 'about/legal.html',
+    templateUrl: 'partials/legal.html',
     controller: 'RoutingCtrl'
   });
   $routeProvider.otherwise({redirectTo: '/home'});
