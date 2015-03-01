@@ -35,6 +35,7 @@ angular.module('myApp.routing', ['ngRoute'])
     templateUrl: 'about/legal.html',
     controller: 'RoutingCtrl'
   });
+  $routeProvider.otherwise({redirectTo: '/home'});
 }])
 
 .controller('RoutingCtrl', [function() {

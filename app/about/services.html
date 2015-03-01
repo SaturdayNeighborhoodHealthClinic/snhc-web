@@ -5,7 +5,15 @@
   </div>
 </div>
 
-<div class="container">
+<div ng-controller="DateListCtrl" class="container">
+  <h1>Upcoming Clinic Dates</h1>
+  <ul class="list-group">
+    <li class="list-group-item" >test</li>
+    <li class="list-group-item" ng-repeat="phone in phones">
+      <span>{{phone.title.$t}}</span>
+      <p>{{phone.summary.$t}}</p>
+    </li>
+  </ul>
   <h1>Saturday Clinic Days</h1>
   <p> The Saturday Neighborhood Health Clinic (SNHC) is a free clinic for the uninsured, run by medical students and staffed by physicians from Washington University School of Medicine in St. Louis, Missouri. We provide basic services much like those you would find at a primary care provider's office: preventative care, treatment of acute or chronic medical conditions, women's health, physical exams, vaccinations, referrals, and prescription refills, among others. We do not provide pediatric care, dental service, or referrals for dental care. </p>
   <p> Any adult patient seeking our services is welcome at our clinic. However, SNHC is not currently equipped to function as a long-term medical home. We strongly encourage our patients to set up routine appointments with primary care physicians after visiting SHNC. Please visit our resources page for help with finding medications and other local health centers. </p>

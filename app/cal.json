@@ -1,0 +1,869 @@
+{
+    "feed": {
+        "category": [
+            {
+                "term": "http://schemas.google.com/g/2005#event",
+                "scheme": "http://schemas.google.com/g/2005#kind"
+            }
+        ],
+        "gd$where": {
+            "valueString": "St. Louis, MO, USA"
+        },
+        "updated": {
+            "$t": "2015-02-28T08:35:10.000Z"
+        },
+        "xmlns$gd": "http://schemas.google.com/g/2005",
+        "subtitle": {
+            "$t": "Tracking the clinic dates for the Saturday Neighborhood Health Clinic run by the Washington University School of Medicine in St. Louis",
+            "type": "text"
+        },
+        "generator": {
+            "$t": "Google Calendar",
+            "version": "1.0",
+            "uri": "http://www.google.com/calendar"
+        },
+        "title": {
+            "$t": "WUSTL SOM SNHC Clinic Dates",
+            "type": "text"
+        },
+        "gCal$timesCleaned": {
+            "value": 0
+        },
+        "xmlns$gCal": "http://schemas.google.com/gCal/2005",
+        "author": [
+            {
+                "name": {
+                    "$t": "WUSTL SOM SNHC Clinic Dates"
+                }
+            }
+        ],
+        "openSearch$startIndex": {
+            "$t": 1
+        },
+        "gCal$timezone": {
+            "value": "America/Chicago"
+        },
+        "xmlns": "http://www.w3.org/2005/Atom",
+        "link": [
+            {
+                "href": "https://www.google.com/calendar/embed?src=7eie7k06g255baksfshfhp0m28%40group.calendar.google.com",
+                "type": "text/html",
+                "rel": "alternate"
+            },
+            {
+                "href": "https://www.google.com/calendar/feeds/7eie7k06g255baksfshfhp0m28%40group.calendar.google.com/public/basic",
+                "type": "application/atom+xml",
+                "rel": "http://schemas.google.com/g/2005#feed"
+            },
+            {
+                "href": "https://www.google.com/calendar/feeds/7eie7k06g255baksfshfhp0m28%40group.calendar.google.com/public/basic/batch",
+                "type": "application/atom+xml",
+                "rel": "http://schemas.google.com/g/2005#batch"
+            },
+            {
+                "href": "https://www.google.com/calendar/feeds/7eie7k06g255baksfshfhp0m28%40group.calendar.google.com/public/basic?alt=json&max-results=15&singleevents=true&futureevents=true&sortorder=ascending&orderby=starttime",
+                "type": "application/atom+xml",
+                "rel": "self"
+            },
+            {
+                "href": "https://www.google.com/calendar/feeds/7eie7k06g255baksfshfhp0m28%40group.calendar.google.com/public/basic?alt=json&start-index=16&max-results=15&singleevents=true&futureevents=true&sortorder=ascending&orderby=starttime",
+                "type": "application/atom+xml",
+                "rel": "next"
+            }
+        ],
+        "xmlns$openSearch": "http://a9.com/-/spec/opensearchrss/1.0/",
+        "openSearch$itemsPerPage": {
+            "$t": 15
+        },
+        "entry": [
+            {
+                "category": [
+                    {
+                        "term": "http://schemas.google.com/g/2005#event",
+                        "scheme": "http://schemas.google.com/g/2005#kind"
+                    }
+                ],
+                "updated": {
+                    "$t": "2015-02-27T19:43:09.000Z"
+                },
+                "title": {
+                    "$t": "Clinic Date",
+                    "type": "html"
+                },
+                "author": [
+                    {
+                        "name": {
+                            "$t": "Justin Porter"
+                        },
+                        "email": {
+                            "$t": "justinrporter@gmail.com"
+                        }
+                    }
+                ],
+                "summary": {
+                    "$t": "When: Sat Mar 7, 2015 8am to 12pm&nbsp;\nCST<br>\n\n\n<br>Event Status: confirmed",
+                    "type": "html"
+                },
+                "content": {
+                    "$t": "When: Sat Mar 7, 2015 8am to 12pm\u00a0\nCST<br />\n\n\n<br />Event Status: confirmed",
+                    "type": "html"
+                },
+                "link": [
+                    {
+                        "href": "https://www.google.com/calendar/event?eid=ZTZtaGpxZHVob244ajFsbjZ2cmc1c29nczBfMjAxNTAzMDdUMTQwMDAwWiA3ZWllN2swNmcyNTViYWtzZnNoZmhwMG0yOEBn",
+                        "type": "text/html",
+                        "rel": "alternate",
+                        "title": "alternate"
+                    },
+                    {
+                        "href": "https://www.google.com/calendar/feeds/7eie7k06g255baksfshfhp0m28%40group.calendar.google.com/public/basic/e6mhjqduhon8j1ln6vrg5sogs0_20150307T140000Z",
+                        "type": "application/atom+xml",
+                        "rel": "self"
+                    }
+                ],
+                "published": {
+                    "$t": "2015-02-27T19:40:43.000Z"
+                },
+                "id": {
+                    "$t": "http://www.google.com/calendar/feeds/7eie7k06g255baksfshfhp0m28%40group.calendar.google.com/public/basic/e6mhjqduhon8j1ln6vrg5sogs0_20150307T140000Z"
+                }
+            },
+            {
+                "category": [
+                    {
+                        "term": "http://schemas.google.com/g/2005#event",
+                        "scheme": "http://schemas.google.com/g/2005#kind"
+                    }
+                ],
+                "updated": {
+                    "$t": "2015-02-27T19:42:49.000Z"
+                },
+                "title": {
+                    "$t": "Specialty Clinic (Orthopedics)",
+                    "type": "html"
+                },
+                "author": [
+                    {
+                        "name": {
+                            "$t": "Justin Porter"
+                        },
+                        "email": {
+                            "$t": "justinrporter@gmail.com"
+                        }
+                    }
+                ],
+                "summary": {
+                    "$t": "When: Wed Mar 11, 2015 6pm to Wed Mar 11, 2015 10pm&nbsp;\nCDT<br>\n\n\n<br>Event Status: confirmed",
+                    "type": "html"
+                },
+                "content": {
+                    "$t": "When: Wed Mar 11, 2015 6pm to Wed Mar 11, 2015 10pm\u00a0\nCDT<br />\n\n\n<br />Event Status: confirmed",
+                    "type": "html"
+                },
+                "link": [
+                    {
+                        "href": "https://www.google.com/calendar/event?eid=NnFpbzRpMnBsY250MTV2aW9iczNoZzNndW9fMjAxNTAzMTFUMjMwMDAwWiA3ZWllN2swNmcyNTViYWtzZnNoZmhwMG0yOEBn",
+                        "type": "text/html",
+                        "rel": "alternate",
+                        "title": "alternate"
+                    },
+                    {
+                        "href": "https://www.google.com/calendar/feeds/7eie7k06g255baksfshfhp0m28%40group.calendar.google.com/public/basic/6qio4i2plcnt15viobs3hg3guo_20150311T230000Z",
+                        "type": "application/atom+xml",
+                        "rel": "self"
+                    }
+                ],
+                "published": {
+                    "$t": "2015-02-27T19:42:12.000Z"
+                },
+                "id": {
+                    "$t": "http://www.google.com/calendar/feeds/7eie7k06g255baksfshfhp0m28%40group.calendar.google.com/public/basic/6qio4i2plcnt15viobs3hg3guo_20150311T230000Z"
+                }
+            },
+            {
+                "category": [
+                    {
+                        "term": "http://schemas.google.com/g/2005#event",
+                        "scheme": "http://schemas.google.com/g/2005#kind"
+                    }
+                ],
+                "updated": {
+                    "$t": "2015-02-27T19:43:09.000Z"
+                },
+                "title": {
+                    "$t": "Clinic Date",
+                    "type": "html"
+                },
+                "author": [
+                    {
+                        "name": {
+                            "$t": "Justin Porter"
+                        },
+                        "email": {
+                            "$t": "justinrporter@gmail.com"
+                        }
+                    }
+                ],
+                "summary": {
+                    "$t": "When: Sat Mar 14, 2015 8am to 12pm&nbsp;\nCDT<br>\n\n\n<br>Event Status: confirmed",
+                    "type": "html"
+                },
+                "content": {
+                    "$t": "When: Sat Mar 14, 2015 8am to 12pm\u00a0\nCDT<br />\n\n\n<br />Event Status: confirmed",
+                    "type": "html"
+                },
+                "link": [
+                    {
+                        "href": "https://www.google.com/calendar/event?eid=ZTZtaGpxZHVob244ajFsbjZ2cmc1c29nczBfMjAxNTAzMTRUMTMwMDAwWiA3ZWllN2swNmcyNTViYWtzZnNoZmhwMG0yOEBn",
+                        "type": "text/html",
+                        "rel": "alternate",
+                        "title": "alternate"
+                    },
+                    {
+                        "href": "https://www.google.com/calendar/feeds/7eie7k06g255baksfshfhp0m28%40group.calendar.google.com/public/basic/e6mhjqduhon8j1ln6vrg5sogs0_20150314T130000Z",
+                        "type": "application/atom+xml",
+                        "rel": "self"
+                    }
+                ],
+                "published": {
+                    "$t": "2015-02-27T19:40:43.000Z"
+                },
+                "id": {
+                    "$t": "http://www.google.com/calendar/feeds/7eie7k06g255baksfshfhp0m28%40group.calendar.google.com/public/basic/e6mhjqduhon8j1ln6vrg5sogs0_20150314T130000Z"
+                }
+            },
+            {
+                "category": [
+                    {
+                        "term": "http://schemas.google.com/g/2005#event",
+                        "scheme": "http://schemas.google.com/g/2005#kind"
+                    }
+                ],
+                "updated": {
+                    "$t": "2015-02-27T19:43:09.000Z"
+                },
+                "title": {
+                    "$t": "Clinic Date",
+                    "type": "html"
+                },
+                "author": [
+                    {
+                        "name": {
+                            "$t": "Justin Porter"
+                        },
+                        "email": {
+                            "$t": "justinrporter@gmail.com"
+                        }
+                    }
+                ],
+                "summary": {
+                    "$t": "When: Sat Mar 21, 2015 8am to 12pm&nbsp;\nCDT<br>\n\n\n<br>Event Status: confirmed",
+                    "type": "html"
+                },
+                "content": {
+                    "$t": "When: Sat Mar 21, 2015 8am to 12pm\u00a0\nCDT<br />\n\n\n<br />Event Status: confirmed",
+                    "type": "html"
+                },
+                "link": [
+                    {
+                        "href": "https://www.google.com/calendar/event?eid=ZTZtaGpxZHVob244ajFsbjZ2cmc1c29nczBfMjAxNTAzMjFUMTMwMDAwWiA3ZWllN2swNmcyNTViYWtzZnNoZmhwMG0yOEBn",
+                        "type": "text/html",
+                        "rel": "alternate",
+                        "title": "alternate"
+                    },
+                    {
+                        "href": "https://www.google.com/calendar/feeds/7eie7k06g255baksfshfhp0m28%40group.calendar.google.com/public/basic/e6mhjqduhon8j1ln6vrg5sogs0_20150321T130000Z",
+                        "type": "application/atom+xml",
+                        "rel": "self"
+                    }
+                ],
+                "published": {
+                    "$t": "2015-02-27T19:40:43.000Z"
+                },
+                "id": {
+                    "$t": "http://www.google.com/calendar/feeds/7eie7k06g255baksfshfhp0m28%40group.calendar.google.com/public/basic/e6mhjqduhon8j1ln6vrg5sogs0_20150321T130000Z"
+                }
+            },
+            {
+                "category": [
+                    {
+                        "term": "http://schemas.google.com/g/2005#event",
+                        "scheme": "http://schemas.google.com/g/2005#kind"
+                    }
+                ],
+                "updated": {
+                    "$t": "2015-02-27T19:43:09.000Z"
+                },
+                "title": {
+                    "$t": "Clinic Date",
+                    "type": "html"
+                },
+                "author": [
+                    {
+                        "name": {
+                            "$t": "Justin Porter"
+                        },
+                        "email": {
+                            "$t": "justinrporter@gmail.com"
+                        }
+                    }
+                ],
+                "summary": {
+                    "$t": "When: Sat Mar 28, 2015 8am to 12pm&nbsp;\nCDT<br>\n\n\n<br>Event Status: confirmed",
+                    "type": "html"
+                },
+                "content": {
+                    "$t": "When: Sat Mar 28, 2015 8am to 12pm\u00a0\nCDT<br />\n\n\n<br />Event Status: confirmed",
+                    "type": "html"
+                },
+                "link": [
+                    {
+                        "href": "https://www.google.com/calendar/event?eid=ZTZtaGpxZHVob244ajFsbjZ2cmc1c29nczBfMjAxNTAzMjhUMTMwMDAwWiA3ZWllN2swNmcyNTViYWtzZnNoZmhwMG0yOEBn",
+                        "type": "text/html",
+                        "rel": "alternate",
+                        "title": "alternate"
+                    },
+                    {
+                        "href": "https://www.google.com/calendar/feeds/7eie7k06g255baksfshfhp0m28%40group.calendar.google.com/public/basic/e6mhjqduhon8j1ln6vrg5sogs0_20150328T130000Z",
+                        "type": "application/atom+xml",
+                        "rel": "self"
+                    }
+                ],
+                "published": {
+                    "$t": "2015-02-27T19:40:43.000Z"
+                },
+                "id": {
+                    "$t": "http://www.google.com/calendar/feeds/7eie7k06g255baksfshfhp0m28%40group.calendar.google.com/public/basic/e6mhjqduhon8j1ln6vrg5sogs0_20150328T130000Z"
+                }
+            },
+            {
+                "category": [
+                    {
+                        "term": "http://schemas.google.com/g/2005#event",
+                        "scheme": "http://schemas.google.com/g/2005#kind"
+                    }
+                ],
+                "updated": {
+                    "$t": "2015-02-27T19:43:09.000Z"
+                },
+                "title": {
+                    "$t": "Clinic Date",
+                    "type": "html"
+                },
+                "author": [
+                    {
+                        "name": {
+                            "$t": "Justin Porter"
+                        },
+                        "email": {
+                            "$t": "justinrporter@gmail.com"
+                        }
+                    }
+                ],
+                "summary": {
+                    "$t": "When: Sat Apr 4, 2015 8am to 12pm&nbsp;\nCDT<br>\n\n\n<br>Event Status: confirmed",
+                    "type": "html"
+                },
+                "content": {
+                    "$t": "When: Sat Apr 4, 2015 8am to 12pm\u00a0\nCDT<br />\n\n\n<br />Event Status: confirmed",
+                    "type": "html"
+                },
+                "link": [
+                    {
+                        "href": "https://www.google.com/calendar/event?eid=ZTZtaGpxZHVob244ajFsbjZ2cmc1c29nczBfMjAxNTA0MDRUMTMwMDAwWiA3ZWllN2swNmcyNTViYWtzZnNoZmhwMG0yOEBn",
+                        "type": "text/html",
+                        "rel": "alternate",
+                        "title": "alternate"
+                    },
+                    {
+                        "href": "https://www.google.com/calendar/feeds/7eie7k06g255baksfshfhp0m28%40group.calendar.google.com/public/basic/e6mhjqduhon8j1ln6vrg5sogs0_20150404T130000Z",
+                        "type": "application/atom+xml",
+                        "rel": "self"
+                    }
+                ],
+                "published": {
+                    "$t": "2015-02-27T19:40:43.000Z"
+                },
+                "id": {
+                    "$t": "http://www.google.com/calendar/feeds/7eie7k06g255baksfshfhp0m28%40group.calendar.google.com/public/basic/e6mhjqduhon8j1ln6vrg5sogs0_20150404T130000Z"
+                }
+            },
+            {
+                "category": [
+                    {
+                        "term": "http://schemas.google.com/g/2005#event",
+                        "scheme": "http://schemas.google.com/g/2005#kind"
+                    }
+                ],
+                "updated": {
+                    "$t": "2015-02-27T19:42:49.000Z"
+                },
+                "title": {
+                    "$t": "Specialty Clinic (Orthopedics)",
+                    "type": "html"
+                },
+                "author": [
+                    {
+                        "name": {
+                            "$t": "Justin Porter"
+                        },
+                        "email": {
+                            "$t": "justinrporter@gmail.com"
+                        }
+                    }
+                ],
+                "summary": {
+                    "$t": "When: Wed Apr 8, 2015 6pm to Wed Apr 8, 2015 10pm&nbsp;\nCDT<br>\n\n\n<br>Event Status: confirmed",
+                    "type": "html"
+                },
+                "content": {
+                    "$t": "When: Wed Apr 8, 2015 6pm to Wed Apr 8, 2015 10pm\u00a0\nCDT<br />\n\n\n<br />Event Status: confirmed",
+                    "type": "html"
+                },
+                "link": [
+                    {
+                        "href": "https://www.google.com/calendar/event?eid=NnFpbzRpMnBsY250MTV2aW9iczNoZzNndW9fMjAxNTA0MDhUMjMwMDAwWiA3ZWllN2swNmcyNTViYWtzZnNoZmhwMG0yOEBn",
+                        "type": "text/html",
+                        "rel": "alternate",
+                        "title": "alternate"
+                    },
+                    {
+                        "href": "https://www.google.com/calendar/feeds/7eie7k06g255baksfshfhp0m28%40group.calendar.google.com/public/basic/6qio4i2plcnt15viobs3hg3guo_20150408T230000Z",
+                        "type": "application/atom+xml",
+                        "rel": "self"
+                    }
+                ],
+                "published": {
+                    "$t": "2015-02-27T19:42:12.000Z"
+                },
+                "id": {
+                    "$t": "http://www.google.com/calendar/feeds/7eie7k06g255baksfshfhp0m28%40group.calendar.google.com/public/basic/6qio4i2plcnt15viobs3hg3guo_20150408T230000Z"
+                }
+            },
+            {
+                "category": [
+                    {
+                        "term": "http://schemas.google.com/g/2005#event",
+                        "scheme": "http://schemas.google.com/g/2005#kind"
+                    }
+                ],
+                "updated": {
+                    "$t": "2015-02-27T19:43:09.000Z"
+                },
+                "title": {
+                    "$t": "Clinic Date",
+                    "type": "html"
+                },
+                "author": [
+                    {
+                        "name": {
+                            "$t": "Justin Porter"
+                        },
+                        "email": {
+                            "$t": "justinrporter@gmail.com"
+                        }
+                    }
+                ],
+                "summary": {
+                    "$t": "When: Sat Apr 11, 2015 8am to 12pm&nbsp;\nCDT<br>\n\n\n<br>Event Status: confirmed",
+                    "type": "html"
+                },
+                "content": {
+                    "$t": "When: Sat Apr 11, 2015 8am to 12pm\u00a0\nCDT<br />\n\n\n<br />Event Status: confirmed",
+                    "type": "html"
+                },
+                "link": [
+                    {
+                        "href": "https://www.google.com/calendar/event?eid=ZTZtaGpxZHVob244ajFsbjZ2cmc1c29nczBfMjAxNTA0MTFUMTMwMDAwWiA3ZWllN2swNmcyNTViYWtzZnNoZmhwMG0yOEBn",
+                        "type": "text/html",
+                        "rel": "alternate",
+                        "title": "alternate"
+                    },
+                    {
+                        "href": "https://www.google.com/calendar/feeds/7eie7k06g255baksfshfhp0m28%40group.calendar.google.com/public/basic/e6mhjqduhon8j1ln6vrg5sogs0_20150411T130000Z",
+                        "type": "application/atom+xml",
+                        "rel": "self"
+                    }
+                ],
+                "published": {
+                    "$t": "2015-02-27T19:40:43.000Z"
+                },
+                "id": {
+                    "$t": "http://www.google.com/calendar/feeds/7eie7k06g255baksfshfhp0m28%40group.calendar.google.com/public/basic/e6mhjqduhon8j1ln6vrg5sogs0_20150411T130000Z"
+                }
+            },
+            {
+                "category": [
+                    {
+                        "term": "http://schemas.google.com/g/2005#event",
+                        "scheme": "http://schemas.google.com/g/2005#kind"
+                    }
+                ],
+                "updated": {
+                    "$t": "2015-02-27T19:43:09.000Z"
+                },
+                "title": {
+                    "$t": "Clinic Date",
+                    "type": "html"
+                },
+                "author": [
+                    {
+                        "name": {
+                            "$t": "Justin Porter"
+                        },
+                        "email": {
+                            "$t": "justinrporter@gmail.com"
+                        }
+                    }
+                ],
+                "summary": {
+                    "$t": "When: Sat Apr 18, 2015 8am to 12pm&nbsp;\nCDT<br>\n\n\n<br>Event Status: confirmed",
+                    "type": "html"
+                },
+                "content": {
+                    "$t": "When: Sat Apr 18, 2015 8am to 12pm\u00a0\nCDT<br />\n\n\n<br />Event Status: confirmed",
+                    "type": "html"
+                },
+                "link": [
+                    {
+                        "href": "https://www.google.com/calendar/event?eid=ZTZtaGpxZHVob244ajFsbjZ2cmc1c29nczBfMjAxNTA0MThUMTMwMDAwWiA3ZWllN2swNmcyNTViYWtzZnNoZmhwMG0yOEBn",
+                        "type": "text/html",
+                        "rel": "alternate",
+                        "title": "alternate"
+                    },
+                    {
+                        "href": "https://www.google.com/calendar/feeds/7eie7k06g255baksfshfhp0m28%40group.calendar.google.com/public/basic/e6mhjqduhon8j1ln6vrg5sogs0_20150418T130000Z",
+                        "type": "application/atom+xml",
+                        "rel": "self"
+                    }
+                ],
+                "published": {
+                    "$t": "2015-02-27T19:40:43.000Z"
+                },
+                "id": {
+                    "$t": "http://www.google.com/calendar/feeds/7eie7k06g255baksfshfhp0m28%40group.calendar.google.com/public/basic/e6mhjqduhon8j1ln6vrg5sogs0_20150418T130000Z"
+                }
+            },
+            {
+                "category": [
+                    {
+                        "term": "http://schemas.google.com/g/2005#event",
+                        "scheme": "http://schemas.google.com/g/2005#kind"
+                    }
+                ],
+                "updated": {
+                    "$t": "2015-02-27T19:43:09.000Z"
+                },
+                "title": {
+                    "$t": "Clinic Date",
+                    "type": "html"
+                },
+                "author": [
+                    {
+                        "name": {
+                            "$t": "Justin Porter"
+                        },
+                        "email": {
+                            "$t": "justinrporter@gmail.com"
+                        }
+                    }
+                ],
+                "summary": {
+                    "$t": "When: Sat Apr 25, 2015 8am to 12pm&nbsp;\nCDT<br>\n\n\n<br>Event Status: confirmed",
+                    "type": "html"
+                },
+                "content": {
+                    "$t": "When: Sat Apr 25, 2015 8am to 12pm\u00a0\nCDT<br />\n\n\n<br />Event Status: confirmed",
+                    "type": "html"
+                },
+                "link": [
+                    {
+                        "href": "https://www.google.com/calendar/event?eid=ZTZtaGpxZHVob244ajFsbjZ2cmc1c29nczBfMjAxNTA0MjVUMTMwMDAwWiA3ZWllN2swNmcyNTViYWtzZnNoZmhwMG0yOEBn",
+                        "type": "text/html",
+                        "rel": "alternate",
+                        "title": "alternate"
+                    },
+                    {
+                        "href": "https://www.google.com/calendar/feeds/7eie7k06g255baksfshfhp0m28%40group.calendar.google.com/public/basic/e6mhjqduhon8j1ln6vrg5sogs0_20150425T130000Z",
+                        "type": "application/atom+xml",
+                        "rel": "self"
+                    }
+                ],
+                "published": {
+                    "$t": "2015-02-27T19:40:43.000Z"
+                },
+                "id": {
+                    "$t": "http://www.google.com/calendar/feeds/7eie7k06g255baksfshfhp0m28%40group.calendar.google.com/public/basic/e6mhjqduhon8j1ln6vrg5sogs0_20150425T130000Z"
+                }
+            },
+            {
+                "category": [
+                    {
+                        "term": "http://schemas.google.com/g/2005#event",
+                        "scheme": "http://schemas.google.com/g/2005#kind"
+                    }
+                ],
+                "updated": {
+                    "$t": "2015-02-27T19:43:09.000Z"
+                },
+                "title": {
+                    "$t": "Clinic Date",
+                    "type": "html"
+                },
+                "author": [
+                    {
+                        "name": {
+                            "$t": "Justin Porter"
+                        },
+                        "email": {
+                            "$t": "justinrporter@gmail.com"
+                        }
+                    }
+                ],
+                "summary": {
+                    "$t": "When: Sat May 2, 2015 8am to 12pm&nbsp;\nCDT<br>\n\n\n<br>Event Status: confirmed",
+                    "type": "html"
+                },
+                "content": {
+                    "$t": "When: Sat May 2, 2015 8am to 12pm\u00a0\nCDT<br />\n\n\n<br />Event Status: confirmed",
+                    "type": "html"
+                },
+                "link": [
+                    {
+                        "href": "https://www.google.com/calendar/event?eid=ZTZtaGpxZHVob244ajFsbjZ2cmc1c29nczBfMjAxNTA1MDJUMTMwMDAwWiA3ZWllN2swNmcyNTViYWtzZnNoZmhwMG0yOEBn",
+                        "type": "text/html",
+                        "rel": "alternate",
+                        "title": "alternate"
+                    },
+                    {
+                        "href": "https://www.google.com/calendar/feeds/7eie7k06g255baksfshfhp0m28%40group.calendar.google.com/public/basic/e6mhjqduhon8j1ln6vrg5sogs0_20150502T130000Z",
+                        "type": "application/atom+xml",
+                        "rel": "self"
+                    }
+                ],
+                "published": {
+                    "$t": "2015-02-27T19:40:43.000Z"
+                },
+                "id": {
+                    "$t": "http://www.google.com/calendar/feeds/7eie7k06g255baksfshfhp0m28%40group.calendar.google.com/public/basic/e6mhjqduhon8j1ln6vrg5sogs0_20150502T130000Z"
+                }
+            },
+            {
+                "category": [
+                    {
+                        "term": "http://schemas.google.com/g/2005#event",
+                        "scheme": "http://schemas.google.com/g/2005#kind"
+                    }
+                ],
+                "updated": {
+                    "$t": "2015-02-27T19:43:09.000Z"
+                },
+                "title": {
+                    "$t": "Clinic Date",
+                    "type": "html"
+                },
+                "author": [
+                    {
+                        "name": {
+                            "$t": "Justin Porter"
+                        },
+                        "email": {
+                            "$t": "justinrporter@gmail.com"
+                        }
+                    }
+                ],
+                "summary": {
+                    "$t": "When: Sat May 9, 2015 8am to 12pm&nbsp;\nCDT<br>\n\n\n<br>Event Status: confirmed",
+                    "type": "html"
+                },
+                "content": {
+                    "$t": "When: Sat May 9, 2015 8am to 12pm\u00a0\nCDT<br />\n\n\n<br />Event Status: confirmed",
+                    "type": "html"
+                },
+                "link": [
+                    {
+                        "href": "https://www.google.com/calendar/event?eid=ZTZtaGpxZHVob244ajFsbjZ2cmc1c29nczBfMjAxNTA1MDlUMTMwMDAwWiA3ZWllN2swNmcyNTViYWtzZnNoZmhwMG0yOEBn",
+                        "type": "text/html",
+                        "rel": "alternate",
+                        "title": "alternate"
+                    },
+                    {
+                        "href": "https://www.google.com/calendar/feeds/7eie7k06g255baksfshfhp0m28%40group.calendar.google.com/public/basic/e6mhjqduhon8j1ln6vrg5sogs0_20150509T130000Z",
+                        "type": "application/atom+xml",
+                        "rel": "self"
+                    }
+                ],
+                "published": {
+                    "$t": "2015-02-27T19:40:43.000Z"
+                },
+                "id": {
+                    "$t": "http://www.google.com/calendar/feeds/7eie7k06g255baksfshfhp0m28%40group.calendar.google.com/public/basic/e6mhjqduhon8j1ln6vrg5sogs0_20150509T130000Z"
+                }
+            },
+            {
+                "category": [
+                    {
+                        "term": "http://schemas.google.com/g/2005#event",
+                        "scheme": "http://schemas.google.com/g/2005#kind"
+                    }
+                ],
+                "updated": {
+                    "$t": "2015-02-27T19:42:49.000Z"
+                },
+                "title": {
+                    "$t": "Specialty Clinic (Orthopedics)",
+                    "type": "html"
+                },
+                "author": [
+                    {
+                        "name": {
+                            "$t": "Justin Porter"
+                        },
+                        "email": {
+                            "$t": "justinrporter@gmail.com"
+                        }
+                    }
+                ],
+                "summary": {
+                    "$t": "When: Wed May 13, 2015 6pm to Wed May 13, 2015 10pm&nbsp;\nCDT<br>\n\n\n<br>Event Status: confirmed",
+                    "type": "html"
+                },
+                "content": {
+                    "$t": "When: Wed May 13, 2015 6pm to Wed May 13, 2015 10pm\u00a0\nCDT<br />\n\n\n<br />Event Status: confirmed",
+                    "type": "html"
+                },
+                "link": [
+                    {
+                        "href": "https://www.google.com/calendar/event?eid=NnFpbzRpMnBsY250MTV2aW9iczNoZzNndW9fMjAxNTA1MTNUMjMwMDAwWiA3ZWllN2swNmcyNTViYWtzZnNoZmhwMG0yOEBn",
+                        "type": "text/html",
+                        "rel": "alternate",
+                        "title": "alternate"
+                    },
+                    {
+                        "href": "https://www.google.com/calendar/feeds/7eie7k06g255baksfshfhp0m28%40group.calendar.google.com/public/basic/6qio4i2plcnt15viobs3hg3guo_20150513T230000Z",
+                        "type": "application/atom+xml",
+                        "rel": "self"
+                    }
+                ],
+                "published": {
+                    "$t": "2015-02-27T19:42:12.000Z"
+                },
+                "id": {
+                    "$t": "http://www.google.com/calendar/feeds/7eie7k06g255baksfshfhp0m28%40group.calendar.google.com/public/basic/6qio4i2plcnt15viobs3hg3guo_20150513T230000Z"
+                }
+            },
+            {
+                "category": [
+                    {
+                        "term": "http://schemas.google.com/g/2005#event",
+                        "scheme": "http://schemas.google.com/g/2005#kind"
+                    }
+                ],
+                "updated": {
+                    "$t": "2015-02-27T19:43:09.000Z"
+                },
+                "title": {
+                    "$t": "Clinic Date",
+                    "type": "html"
+                },
+                "author": [
+                    {
+                        "name": {
+                            "$t": "Justin Porter"
+                        },
+                        "email": {
+                            "$t": "justinrporter@gmail.com"
+                        }
+                    }
+                ],
+                "summary": {
+                    "$t": "When: Sat May 16, 2015 8am to 12pm&nbsp;\nCDT<br>\n\n\n<br>Event Status: confirmed",
+                    "type": "html"
+                },
+                "content": {
+                    "$t": "When: Sat May 16, 2015 8am to 12pm\u00a0\nCDT<br />\n\n\n<br />Event Status: confirmed",
+                    "type": "html"
+                },
+                "link": [
+                    {
+                        "href": "https://www.google.com/calendar/event?eid=ZTZtaGpxZHVob244ajFsbjZ2cmc1c29nczBfMjAxNTA1MTZUMTMwMDAwWiA3ZWllN2swNmcyNTViYWtzZnNoZmhwMG0yOEBn",
+                        "type": "text/html",
+                        "rel": "alternate",
+                        "title": "alternate"
+                    },
+                    {
+                        "href": "https://www.google.com/calendar/feeds/7eie7k06g255baksfshfhp0m28%40group.calendar.google.com/public/basic/e6mhjqduhon8j1ln6vrg5sogs0_20150516T130000Z",
+                        "type": "application/atom+xml",
+                        "rel": "self"
+                    }
+                ],
+                "published": {
+                    "$t": "2015-02-27T19:40:43.000Z"
+                },
+                "id": {
+                    "$t": "http://www.google.com/calendar/feeds/7eie7k06g255baksfshfhp0m28%40group.calendar.google.com/public/basic/e6mhjqduhon8j1ln6vrg5sogs0_20150516T130000Z"
+                }
+            },
+            {
+                "category": [
+                    {
+                        "term": "http://schemas.google.com/g/2005#event",
+                        "scheme": "http://schemas.google.com/g/2005#kind"
+                    }
+                ],
+                "updated": {
+                    "$t": "2015-02-27T19:43:09.000Z"
+                },
+                "title": {
+                    "$t": "Clinic Date",
+                    "type": "html"
+                },
+                "author": [
+                    {
+                        "name": {
+                            "$t": "Justin Porter"
+                        },
+                        "email": {
+                            "$t": "justinrporter@gmail.com"
+                        }
+                    }
+                ],
+                "summary": {
+                    "$t": "When: Sat May 23, 2015 8am to 12pm&nbsp;\nCDT<br>\n\n\n<br>Event Status: confirmed",
+                    "type": "html"
+                },
+                "content": {
+                    "$t": "When: Sat May 23, 2015 8am to 12pm\u00a0\nCDT<br />\n\n\n<br />Event Status: confirmed",
+                    "type": "html"
+                },
+                "link": [
+                    {
+                        "href": "https://www.google.com/calendar/event?eid=ZTZtaGpxZHVob244ajFsbjZ2cmc1c29nczBfMjAxNTA1MjNUMTMwMDAwWiA3ZWllN2swNmcyNTViYWtzZnNoZmhwMG0yOEBn",
+                        "type": "text/html",
+                        "rel": "alternate",
+                        "title": "alternate"
+                    },
+                    {
+                        "href": "https://www.google.com/calendar/feeds/7eie7k06g255baksfshfhp0m28%40group.calendar.google.com/public/basic/e6mhjqduhon8j1ln6vrg5sogs0_20150523T130000Z",
+                        "type": "application/atom+xml",
+                        "rel": "self"
+                    }
+                ],
+                "published": {
+                    "$t": "2015-02-27T19:40:43.000Z"
+                },
+                "id": {
+                    "$t": "http://www.google.com/calendar/feeds/7eie7k06g255baksfshfhp0m28%40group.calendar.google.com/public/basic/e6mhjqduhon8j1ln6vrg5sogs0_20150523T130000Z"
+                }
+            }
+        ],
+        "openSearch$totalResults": {
+            "$t": 1089
+        },
+        "id": {
+            "$t": "http://www.google.com/calendar/feeds/7eie7k06g255baksfshfhp0m28%40group.calendar.google.com/public/basic"
+        }
+    },
+    "version": "1.0",
+    "encoding": "UTF-8"
+}
