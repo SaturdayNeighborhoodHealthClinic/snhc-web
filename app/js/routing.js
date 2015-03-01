@@ -1,26 +1,26 @@
 'use strict';
 
-angular.module('myApp.volunteers', ['ngRoute'])
+angular.module('myApp.routing', ['ngRoute'])
 
 .config(['$routeProvider', function($routeProvider) {
   $routeProvider.when('/medstudents', {
     templateUrl: 'volunteers/medstudents.html',
-    controller: 'VolunteersCtrl'
+    controller: 'RoutingCtrl'
   });
   $routeProvider.when('/physicians', {
     templateUrl: 'volunteers/physicians.html',
-    controller: 'VolunteersCtrl'
+    controller: 'RoutingCtrl'
   });
   $routeProvider.when('/socialwork', {
     templateUrl: 'volunteers/socialwork.html',
-    controller: 'VolunteersCtrl'
+    controller: 'RoutingCtrl'
   });
   $routeProvider.when('/occupationaltherapy', {
     templateUrl: 'volunteers/occupationaltherapy.html',
-    controller: 'VolunteersCtrl'
+    controller: 'RoutingCtrl'
   });
 }])
 
-.controller('VolunteersCtrl', [function() {
+.controller('RoutingCtrl', [function() {
 
 }]);
