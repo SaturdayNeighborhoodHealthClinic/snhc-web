@@ -19,8 +19,11 @@ angular.module('myApp.routing', ['ngRoute'])
     templateUrl: 'volunteers/occupationaltherapy.html',
     controller: 'RoutingCtrl'
   });
+  $routeProvider.when('/home', {
+    templateUrl: 'home/home.html',
+    controller: 'RoutingCtrl'
+  });
 }])
 
 .controller('RoutingCtrl', [function() {
-
 }]);
