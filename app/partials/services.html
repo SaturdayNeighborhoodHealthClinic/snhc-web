@@ -9,17 +9,34 @@
   <h1>Upcoming Clinic Dates</h1>
 
   <table class="table table-striped" >
-    <tr ng-repeat="phone in phones | limitTo:3 ">
+    <tr ng-repeat="phone in phones | limitTo:5 ">
       <td> <strong>{{phone.title.$t}}</strong> </td>
-      <td> {{ phone.summary.$t | unmangle }} </p>
+      <td> {{ phone.summary.$t | unmangle }} </td>
     </tr>
   </table>
 
+  <p class="text-muted"/>For more dates, visit our <a href="https://www.google.com/calendar/embed?src=7eie7k06g255baksfshfhp0m28%40group.calendar.google.com&ctz=America/Chicago">Google Calendar</a>.</p>
+
   <h1>Saturday Clinic Days</h1>
-  <p> The Saturday Neighborhood Health Clinic (SNHC) is a free clinic for the uninsured, run by medical students and staffed by physicians from Washington University School of Medicine in St. Louis, Missouri. We provide basic services much like those you would find at a primary care provider's office: preventative care, treatment of acute or chronic medical conditions, women's health, physical exams, vaccinations, referrals, and prescription refills, among others. We do not provide pediatric care, dental service, or referrals for dental care. </p>
-  <p> Any adult patient seeking our services is welcome at our clinic. However, SNHC is not currently equipped to function as a long-term medical home. We strongly encourage our patients to set up routine appointments with primary care physicians after visiting SHNC. Please visit our resources page for help with finding medications and other local health centers. </p>
-  <p> SNHC is located in the Forest Park Southeast neighborhood in the City of St. Louis, Missouri. Clinic is held in the Family Health Care Center facility at 4352 Manchester Avenue on most Saturdays from 9:00AM to 12:00PM. Please check our calendar for clinic dates. </p>
-  <p> We do not take appointments. Patients are seen on a first come, first serve basis. Due to the limited number of staff members we have at the clinic, we can only see the first 9 patients who come in each Saturday. We encourage you to arrive as early as possible in order to ensure that you can be seen in a timely manner. </p>
+  <p> The Saturday Neighborhood Health Clinic (SNHC) is a free clinic for the uninsured, run by medical students and staffed by physicians from Washington University School of Medicine in St. Louis, Missouri.
+    We provide basic services much like those you would find at a primary care provider's office: preventative care, treatment of acute or chronic medical conditions, women's health, physical exams, vaccinations, referrals, and prescription refills, among others.
+    We do not provide pediatric care, dental service, or referrals for dental care.
+  </p>
+  <p> Any adult patient seeking our services is welcome at our clinic.
+    However, SNHC is not currently equipped to function as a long-term medical home.
+    We strongly encourage our patients to set up routine appointments with primary care physicians after visiting SHNC.
+    Please visit our resources page for help with finding medications and other local health centers.
+  </p>
+  <p> SNHC is located in the Forest Park Southeast neighborhood in St. Louis, Missouri.
+    Clinic is held in the Family Health Care Center facility at 4352 Manchester Avenue on most Saturdays from 9:00AM to 12:00PM.
+  </p>
+  <p> We do not take appointments.
+    Patients are seen on a first come, first serve basis.
+    Due to the limited number of staff members we have at the clinic, we can only see the first 9 patients who come in each Saturday.
+    We encourage you to arrive as early as possible in order to ensure that you can be seen in a timely manner.
+  </p>
   <h1>Wednesday Specialty Nights</h1>
-  <p> The Wednesday Specialty Nights provide free medical specialty services for uninsured patients. Click here for the most up to date schedule and to see the specialties available at each date. The Wednesday Night Specialty Clinics are located at 4570 Children's Place. </p>
+  <p> The Wednesday Specialty Nights provide free medical specialty services for uninsured patients.
+    Specialty services include an Orthopedics service for muscle or joint pain and psychiatric services.
+  </p>
 </div>
