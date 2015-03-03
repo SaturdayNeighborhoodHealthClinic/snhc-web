@@ -42,5 +42,9 @@ angular.module('myApp.routing', ['ngRoute'])
   $routeProvider.otherwise({redirectTo: '/home'});
 }])
 
-.controller('RoutingCtrl', [function() {
+.controller('RoutingCtrl', ['$scope', '$window', '$location',
+  function($scope, $window, $location) {
+    $scope.$on('$viewContentLoaded', function(event) {
+      $window.ga('send', 'pageview', { page: $location.url() });
+    });
 }]);
