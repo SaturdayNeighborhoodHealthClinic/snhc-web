@@ -17,7 +17,13 @@ myApp.filter('unmangle', function() {
     // they'll provide better access to this info?
     var nbsp = input.indexOf("&nbsp");
     var begin = 5;
-    return input.slice(begin,nbsp);
+    var rawdate = input.slice(begin,nbsp);
+    var splitdate = rawdate.split(" ")
+    if (splitdate.length = 11) {
+        var firstpart = splitdate.splice(0,6)
+        var lastpart = splitdate.splice(4,1)
+    }
+    return firstpart.concat(lastpart).join(" ")
   };
 })
 
