@@ -1,6 +1,6 @@
-exec &> update.latest
-
 cat update.latest >> update.log
+
+exec &> update.latest
 
 echo -n "UPDATE:"
 date
