@@ -1,4 +1,4 @@
-rm -rf *
+rm -rf $( ls | grep -v bower_components )
 wget --no-check-certificate https://github.com/justinrporter/snhc-web/archive/master.zip
 unzip master
 rm -r master
