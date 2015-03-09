@@ -1,4 +1,6 @@
-exec &> update.tmp
+exec &> update.latest
+
+cat update.latest >> update.log
 
 echo -n "UPDATE:"
 date
@@ -10,5 +12,3 @@ rm -r master
 mv snhc-web-master/app/* .
 mv snhc-web-master/update.sh .
 rm -rf snhc-web-master
-
-cat update.tmp >> update.log
