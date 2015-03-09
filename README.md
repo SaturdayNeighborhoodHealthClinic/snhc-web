@@ -1,10 +1,21 @@
-# snhc-web: the web frontend for the SNHC.
+# snhc-web: the SNHC web front-end
 
 Our public-facing website. Seeded using the [angular-seed](https://github.com/angular/angular-seed) repository.
 
 ## Getting Started
 
 To get you started you can simply clone our repository and install the dependencies.
+Alternatively, for small changes (particularly if it only involves wordsmithing and no 
+substantial formatting changes), you can edit directly through GitHub. See "Editing on GitHub"
+for details. The rest of this section deals with hacking on this repo locally, which is nothing
+but encouraged!
+
+### Editing on GitHub
+
+There are a couple of ways to edit our website. The first, and easiest, is simply to make
+changes using the GitHub web GUI. Doing this prevents you from being able to test your changes,
+so *do not* make your changes in master unless you are sure you're not breaking anything. Instead, 
+make them in a branch, and then ask the webmaster to test your branch before merging.
 
 ### Prerequisites
 
@@ -58,7 +69,6 @@ npm start
 
 Now browse to the app at `http://localhost:8000/app/index.html`.
 
-
 ## Directory Layout
 
 ```
@@ -83,6 +93,7 @@ karma.conf.js         --> config file for running unit tests with Karma
 e2e-tests/            --> end-to-end tests
   protractor-conf.js    --> Protractor config file
   scenarios.js          --> end-to-end scenarios to be run by Protractor
+update.sh             --> the script used by our server to pull 'master' down from github.
 ```
 
 ## Testing
@@ -226,18 +237,12 @@ configure your server to serve the files under the `app/` directory.
 
 ### Running the App in Production
 
-This really depends on how complex your app is and the overall infrastructure of your system, but
-the general rule is that all you need in production are all the files under the `app/` directory.
-Everything else should be omitted.
+Every night, the student groups server, run by IT will pull down and deploy the master branch from
+GitHub. That means that any changes merged to master will go live at midnight after the change is merged.
 
-Angular apps are really just a bunch of static html, css and js files that just need to be hosted
-somewhere they can be accessed by browsers.
-
-If your Angular app is talking to the backend server via xhr or other means, you need to figure
-out what is the best way to host the static files to comply with the same origin policy if
-applicable. Usually this is done by hosting the files by the backend server or through
-reverse-proxying the backend server(s) and webserver(s).
-
+Curretly, there is no backend code for this portion of the website. Given the state of those servers,
+and our control over their configuration, this is unlikely to change in the near future, unless we
+migrate to another hosting solution.
 
 ## Continuous Integration
 
@@ -251,21 +256,9 @@ tests when you push to GitHub.
 You will need to enable the integration between Travis and GitHub. See the Travis website for more
 instruction on how to do this.
 
-### CloudBees
-
-CloudBees have provided a CI/deployment setup:
-
-<a href="https://grandcentral.cloudbees.com/?CB_clickstart=https://raw.github.com/CloudBees-community/angular-js-clickstart/master/clickstart.json">
-<img src="https://d3ko533tu1ozfq.cloudfront.net/clickstart/deployInstantly.png"/></a>
-
-If you run this, you will get a cloned version of this repo to start working on in a private git repo,
-along with a CI service (in Jenkins) hosted that will run unit and end to end tests in both Firefox and Chrome.
-
-
 ## Contact
 
-For more information on AngularJS please check out http://angularjs.org/
-
+[angular]: http://angularjs.org/
 [git]: http://git-scm.com/
 [bower]: http://bower.io
 [npm]: https://www.npmjs.org/
