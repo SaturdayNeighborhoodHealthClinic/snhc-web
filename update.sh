@@ -4,3 +4,4 @@ unzip master
 rm -r master
 mv snhc-web-master/app/* .
 mv snhc-web-master/update.sh .
+rm -rf snhc-web-master
