@@ -1,6 +1,8 @@
+cd $HOME
 cat update.latest >> update.log
 
 exec &> update.latest
+cd $HOME
 
 echo -n "UPDATE:"
 date
