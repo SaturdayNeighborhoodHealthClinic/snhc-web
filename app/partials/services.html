@@ -9,9 +9,9 @@
   <h1>Upcoming Clinic Dates</h1>
 
   <table class="table table-striped" >
-    <tr ng-repeat="phone in phones | limitTo:5 ">
-      <td> <strong>{{phone.title.$t}}</strong> </td>
-      <td> {{ phone.summary.$t | unmangle }} </td>
+    <tr ng-repeat="event in data.items | limitTo:5 ">
+      <td> <strong>{{event.summary}}</strong> </td>
+      <td> {{ event.start.dateTime | date:"MMMM d, y h:mm" }} - {{event.end.dateTime | date: "h:mm a"}} </td>
     </tr>
   </table>
 
