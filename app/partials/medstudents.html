@@ -19,5 +19,9 @@
 </div>
 
 <div class="container" ng-controller="CalCtrl">
+  <tr ng-repeat="datum in data | limitTo:5 ">
+    <td> <strong>{{datum.title.$t}}</strong> </td>
+  </tr>
+
   <div id="calendar"></div>
 </div>
