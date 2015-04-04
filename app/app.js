@@ -17,6 +17,8 @@ angular.module( 'myApp.calService', [] )
   .value('google_key', 'AIzaSyDllIaMvMrMYrTxHRTzR9R9Ze23-Cf8iRU' )
   .value('calendar_id', '7eie7k06g255baksfshfhp0m28%40group.calendar.google.com' )
   .value('getCal',
+    // This is the "events list" API call. 
+    // https://developers.google.com/google-apps/calendar/v3/reference/events/list
     function( $scope, $http, $window, google_key, calendar_id ){
       return $http({
         url: "https://www.googleapis.com/calendar/v3/calendars/" + calendar_id + '/events',
