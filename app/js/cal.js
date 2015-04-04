@@ -10,6 +10,7 @@ angular.module('myApp.calcontrol', ['myApp.calService'])
         $scope.data = data;
 
         var event_list = [];
+        //TODO: limit the number of times this is done (currently list length is the default, whatever that is.)
         for ( var index in data.items ) {
           // data.times are "events" resources.
           // API doc: https://developers.google.com/google-apps/calendar/v3/reference/events#resource
