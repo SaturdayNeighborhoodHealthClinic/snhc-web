@@ -19,13 +19,16 @@ angular.module( 'myApp.calService', [] )
   .value('getCal',
     // This is the "events list" API call. 
     // https://developers.google.com/google-apps/calendar/v3/reference/events/list
-    function( $scope, $http, $window, google_key, calendar_id ){
+    function( $http, google_key, calendar_id ){
       return $http({
         url: "https://www.googleapis.com/calendar/v3/calendars/" + calendar_id + '/events',
         method: "GET",
         params: { key : google_key,
+                  // display repeating events as individual events
                   "singleEvents" : true,
+                  // the earliest time to display; don't load anything that's already happened.
                   "timeMin" : new Date(),
+                  // default is to dump events in an arbitrary (but stable) order; we want them ordered by start time.
                   "orderBy" : "startTime"  }
       });
     }
