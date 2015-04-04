@@ -16,12 +16,14 @@ angular.module('myApp.calcontrol', ['myApp.calService'])
 
           // This dictionary is interpreted by the FullCalendar module to render an appropriate calendar.
           // API doc: http://fullcalendar.io/docs/event_data/events_array/
-          event_list.push({ 
-            title : data.items[index].summary,
-            start : data.items[index].start.dateTime,
-            end : data.items[index].end.dateTime,
-            // rendering : "background"
-                          });
+          event_properties = { title : data.items[index].summary,
+                               start : data.items[index].start.dateTime,
+                               end : data.items[index].end.dateTime,
+                               color : "purple"
+                              // rendering : "background"
+                              }
+
+          event_list.push( event_properties );
         }
 
         $('#calendar').fullCalendar({
