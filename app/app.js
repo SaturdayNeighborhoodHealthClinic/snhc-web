@@ -5,9 +5,26 @@ var myApp = angular.module('myApp', [
   'ngRoute',
   'myApp.routing',
   'myApp.datelist',
-  // 'myApp.calcontrol',
+  'myApp.calcontrol',
   'myApp.version'
 ]).
 config(['$routeProvider', function($routeProvider) {
   $routeProvider.otherwise({redirectTo: '/home'});
 }]);
+
+angular.module( 'myApp.calService', [] )
+  // this public-access API key is owned by Justin Porter at https://console.developers.google.com/project/810603352299
+  .value('google_key', 'AIzaSyDllIaMvMrMYrTxHRTzR9R9Ze23-Cf8iRU' )
+  .value('calendar_id', '7eie7k06g255baksfshfhp0m28%40group.calendar.google.com' )
+  .value('getCal',
+    function( $scope, $http, $window, google_key, calendar_id ){
+      return $http({
+        url: "https://www.googleapis.com/calendar/v3/calendars/" + calendar_id + '/events',
+        method: "GET",
+        params: { key : google_key,
+                  "singleEvents" : true,
+                  "timeMin" : new Date(),
+                  "orderBy" : "startTime"  }
+      });
+    }
+  )

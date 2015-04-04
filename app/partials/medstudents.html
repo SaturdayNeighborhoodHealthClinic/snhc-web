@@ -21,9 +21,5 @@
 -->
 
 <div class="container" ng-controller="CalCtrl">
-  <p ng-repeat="event in data.items | limitTo:5 ">
-    {{event.start.dateTime | date: "yyyy-MM-dd"}}
-  </p>
-
   <div id="calendar"></div>
 </div>
