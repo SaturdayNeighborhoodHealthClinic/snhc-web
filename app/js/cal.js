@@ -33,19 +33,19 @@ angular.module('myApp.calcontrol', ['myApp.calService', 'firebase'])
     });
   })
   .controller('FirebaseCtrl', function($scope, $firebaseArray, fbRef ){
-    console.log( $scope.event );
     $scope.firebase_event = $firebaseArray(fbRef.child("events").child($scope.event.id));
 
-    $scope.open_clinical = true;
-    $scope.open_preclinical = true;
-    $scope.open_attending = true;
+    $scope.open = function( clinfilter ) {
+      return (clinfilter == "preclinical");
+    }
 
-    // $scope.volunteer = function( gcal_ev ){
-    //   firebase_event.$loaded().then(function() {
-    //     console.log( firebase_event.$getRecord('preclinical'));
-    //     console.log( firebase_event.$getRecord('preclinical')[3]);
-    //   }).catch(function(error) {
-    //     alert('Error!');
-    //   });
-    // }
+    $scope.volunteer = function(){
+      $scope.firebase_event.$loaded().then(function() {
+        alert("I don't do anything yet!");
+        // console.log( firebase_event.$getRecord('preclinical'));
+        // console.log( firebase_event.$getRecord('preclinical')[3]);
+      }).catch(function(error) {
+        alert('Error!');
+      });
+    }
   });
