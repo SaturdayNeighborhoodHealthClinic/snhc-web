@@ -31,5 +31,5 @@ angular.module( 'myApp.calService', [] )
                   // default is to dump events in an arbitrary (but stable) order; we want them ordered by start time.
                   "orderBy" : "startTime"  }
       });
-    }
-  )
+  })
+  .value('fb_ref', "https://blistering-fire-6953.firebaseio.com")
