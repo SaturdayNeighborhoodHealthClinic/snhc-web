@@ -20,12 +20,14 @@
 </div>
 -->
 
-<div class="container" ng-controller="CalCtrl">
-  <table class="table table-striped" >
-    <tr ng-repeat="event in events | limitTo:5 ">
-      <td> <strong>{{event.title}}</strong> </td>
+<div class="container">
+  <h1>Upcoming Availiable Dates</h1>
+  <table class="table table-striped" ng-controller="CalCtrl" >
+    <tr ng-repeat="event in cal_events | limitTo:5" ng-controller="FirebaseCtrl" >
+      <td> <strong>{{event.title}}</strong> ({{event.id}})</td>
       <td> {{ event.start | date:"MMMM d, y h:mm" }} - {{event.end | date: "h:mm a"}} </td>
-
+      <td> <form ng-submit="volunteer(event)"> <button type="submit">Volunteer</button> </form> </td>
     </tr>
   </table>
+  {{fb_events}}
 </div>
