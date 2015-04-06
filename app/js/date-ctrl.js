@@ -1,8 +1,8 @@
 'use strict';
 
 angular.module('myApp.datelist', ['myApp.calService'])
-  .controller('DateListCtrl', function($scope, $http, $window, getCal, google_key, calendar_id ) {
-    getCal( $http, google_key, calendar_id )
+  .controller('DateListCtrl', function($scope, $http, $window, cal_http ) {
+    cal_http
       .success(function(data, status, headers, config) {
         $scope.data = data;
       })

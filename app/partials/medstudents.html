@@ -21,5 +21,11 @@
 -->
 
 <div class="container" ng-controller="CalCtrl">
-  <div id="calendar"></div>
+  <table class="table table-striped" >
+    <tr ng-repeat="event in events | limitTo:5 ">
+      <td> <strong>{{event.title}}</strong> </td>
+      <td> {{ event.start | date:"MMMM d, y h:mm" }} - {{event.end | date: "h:mm a"}} </td>
+
+    </tr>
+  </table>
 </div>

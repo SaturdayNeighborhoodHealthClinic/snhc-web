@@ -2,51 +2,38 @@
 
 /* Controllers */
 
-angular.module('myApp.calcontrol', ['myApp.calService'])
-  .controller('CalCtrl', function($scope, $document, $http, $window, google_key, calendar_id, getCal ) {
-    getCal( $http, google_key, calendar_id )
-      .success(function(data, status, headers, config) {
+angular.module('myApp.calcontrol', ['myApp.calService', 'firebase'])
+  .value('fbURL', "https://blistering-fire-6953.firebaseio.com")
+  .service('fbRef', function(fbURL) {
+    return new Firebase(fbURL)
+  })
+  .controller('CalCtrl', function($scope, $window, $firebaseObject, fbRef, cal_http ) {
 
-        var myFirebaseRef = new Firebase("https://blistering-fire-6953.firebaseio.com");
+    cal_http
+    .success(function(data, status, headers, config) {
+      for ( var index in data.items ) {
+        // data.times are "events" resources.
+        // API doc: https://developers.google.com/google-apps/calendar/v3/reference/events#resource
 
-        $scope.data = data;
+        // This dictionary is interpreted by the FullCalendar module to render an appropriate calendar.
+        // API doc: http://fullcalendar.io/docs/event_data/events_array/
+        var event_properties = { title : data.items[index].summary,
+                                 start : data.items[index].start.dateTime,
+                                 end : data.items[index].end.dateTime,
+                                 color : "purple",
+                                 id : data.items[index].id
+                                // rendering : background"
+                                };
+      }
+      $scope.events = event_list;
+    })
+    .error(function(data, status, headers, config) {
+      $window.alert("Whoops! We failed to contact the Google Calendar. Response was "+status+". Sorry!");
+    });
 
-        var event_list = [];
-        //TODO: limit the number of times this is done (currently list length is the default, whatever that is.)
-        for ( var index in data.items ) {
-          // data.times are "events" resources.
-          // API doc: https://developers.google.com/google-apps/calendar/v3/reference/events#resource
+    // download the data into a local object
+    // var syncObject = $firebaseObject(fbRef);
 
-          // This dictionary is interpreted by the FullCalendar module to render an appropriate calendar.
-          // API doc: http://fullcalendar.io/docs/event_data/events_array/
-          var event_properties = { title : data.items[index].summary,
-                                   start : data.items[index].start.dateTime,
-                                   end : data.items[index].end.dateTime,
-                                   color : "purple",
-                                   id : data.items[index].id
-                                   // rendering : "background"
-                                  };
-
-          event_list.push( event_properties );
-        }
-
-        $('#calendar').fullCalendar({
-          events: event_list,
-          eventClick : function( calEvent, jsEvent, view ) {
-
-            myFirebaseRef.child("volunteers").child(calEvent.id)
-            myFirebaseRef.child("volunteers").set({
-              "event_id" : calEvent.title
-            });
-
-            var clindate = new Date(calEvent.start);
-            $window.alert( "You've signed up for " + calEvent.title + " on " + clindate );
-
-          }
-        })
-      })
-      .error(function(data, status, headers, config) {
-        $scope.status = status;
-        $window.alert("Whoops! We failed to contact the Google Calendar. Response was "+status+". Sorry!");
-      });
+    // synchronize the object with a three-way data binding
+    // syncObject.$bindTo($scope, "data");
   });
