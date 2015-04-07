@@ -4,6 +4,9 @@
 
 angular.module('myApp.calcontrol', ['myApp.calService', 'firebase'])
   .value('fbURL', "https://blistering-fire-6953.firebaseio.com")
+  .value('max_volunteers', { clinical : 3,
+                             preclinical : 3,
+                             attending : 1 })
   .service('fbRef', function(fbURL) {
     return new Firebase(fbURL)
   })
@@ -32,14 +35,33 @@ angular.module('myApp.calcontrol', ['myApp.calService', 'firebase'])
       $window.alert("Whoops! We failed to contact the Google Calendar. Response was "+status+". Sorry!");
     });
   })
-  .controller('FirebaseCtrl', function($scope, $firebaseArray, fbRef ){
+  .controller('FirebaseCtrl', function($scope, $firebaseArray, fbRef, max_volunteers ){
     $scope.firebase_event = $firebaseArray(fbRef.child("events").child($scope.event.id));
+    console.log($scope.firebase_event);
 
     $scope.open = function( clinfilter ) {
-      return (clinfilter == "preclinical");
+      if( clinfilter == "ALL" ){
+        return true;
+      }
+
+      var volunteers = $scope.firebase_event.$getRecord(clinfilter);
+
+      if( volunteers ) {
+        var n_volunteers = 0;
+
+        for( var volunteer in volunteers ){
+          if(volunteer.charAt(0) != "$"){
+            n_volunteers += 1;
+          }
+        }
+        return ( n_volunteers < max_volunteers[clinfilter] );
+      } else { // no volunteers
+        return true;
+      }
     }
 
-    $scope.volunteer = function(){
+    $scope.volunteer = function(clinfilter){
+
       $scope.firebase_event.$loaded().then(function() {
         alert("I don't do anything yet!");
         // console.log( firebase_event.$getRecord('preclinical'));

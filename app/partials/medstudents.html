@@ -22,10 +22,11 @@
 
 <div class="container">
   <div class="fluid-container col-lg-9"><h1>Upcoming Availiable Dates</h1></div>
-  <div class="btn-group">
+  <div class="btn-group col-lg-3">
     <input ng-model="clinfilter" value="preclinical" type="radio">Preclinical</input></br>
     <input ng-model="clinfilter" value="clinical" type="radio">Clinical</input></br>
     <input ng-model="clinfilter" value="attending" type="radio">Attending</input></br>
+    <input ng-model="clinfilter" value="ALL" type="radio">Show All</input></br>
   </div>
   <table class="table table-striped" ng-controller="CalCtrl" >
     <tr ng-repeat="event in cal_events | limitTo:5" ng-controller="FirebaseCtrl" ng-show="open(clinfilter)" >
