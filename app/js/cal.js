@@ -38,7 +38,6 @@ angular.module('myApp.calcontrol', ['myApp.calService', 'firebase'])
   .controller('FirebaseCtrl', function($scope, $firebaseArray, $firebaseObject, fbRef, max_volunteers ){
     $scope.firebase_volunteers = $firebaseObject(fbRef.child("events").child($scope.event.id));
     $scope.max_volunteers = max_volunteers;
-    $scope.uname = "bgunner";
 
     $scope.open = function(clinfilter) {
       var n_volunteers = 0;
@@ -56,27 +55,30 @@ angular.module('myApp.calcontrol', ['myApp.calService', 'firebase'])
 
     $scope.volunteer = function(clinfilter){
       if( !$scope.open(clinfilter)){
-        alert( "This date doesn't look to be availiable. That's all we know." );
+        alert( "The date doesn't look to be availiable. That's all we know." );
         return;
-      } else if( $firebaseObject(fbRef.child("users")
-                                      .child($scope.uname)
-                                      .child("type")) != clinfilter ) {
-        alert( "You (username '" + $scope.uname + "') don't seem to be authorized to volunteer for this "+clinfilter+" spot." );
-        return;
-      } else {
-        var user_entry = $firebaseObject(fbRef.child("events")
-                                      .child($scope.event.id)
-                                      .child(clinfilter)
-                                      .child($scope.uname));
-        console.log( user_entry );
-        user_entry.$value = true;
-        console.log( user_entry );
-        user_entry.$save().then( function() {
-          console.log($firebaseObject(fbRef.child("events")
-                                              .child($scope.event.id)
-                                              .child(clinfilter)
-                                              .child($scope.uname)));
-        });
-      }
+      } 
+
+      var volunteer_info = $firebaseObject(fbRef.child("users").child($scope.uname).child("type"));
+
+      volunteer_info.$loaded().then( function() {
+        if( volunteer_info != clinfilter ) {
+          alert( "You (username '" + $scope.uname + "') don't seem to be authorized to volunteer for this "+clinfilter+" spot." );
+          return;
+        } else {
+          var user_entry = $firebaseObject(fbRef.child("events")
+                                                .child($scope.event.id)
+                                                .child(clinfilter)
+                                                .child($scope.uname));
+          user_entry.$value = true;
+          user_entry.$save().then( function() {
+            console.log($firebaseObject(fbRef.child("events")
+                                             .child($scope.event.id)
+                                             .child(clinfilter)
+                                             .child($scope.uname)));
+          });
+        }
+      })
+
     }
   });

@@ -6,17 +6,25 @@
 </div>
 
 <div class="container" ng-init="clinfilter='preclinical'">
-  <div class="fluid-container col-lg-9"><h1>Upcoming Availiable Dates</h1></div>
-  <div class="btn-group col-lg-3">
-    <input ng-model="clinfilter" value="preclinical" type="radio">Preclinical</input></br>
-    <input ng-model="clinfilter" value="clinical" type="radio">Clinical</input></br>
-    <input ng-model="clinfilter" value="attending" type="radio">Attending</input></br>
+  <div class="row">
+    <div class="col-lg-9">
+      <h1>Upcoming Availiable Dates</h1>
+      <div class="input-group">
+        <input type='text' ng-model='uname' class="form-control" aria-describedby="wusm-wustl-addon" placeholder="username">
+        <span class="input-group-addon" id="wusm-wustl.edu">@wusm.wustl.edu</span>
+      </div>
+    </div>
+    <div class="btn-group col-lg-3">
+      <input ng-model="clinfilter" value="preclinical" type="radio">Preclinical</input></br>
+      <input ng-model="clinfilter" value="clinical" type="radio">Clinical</input></br>
+      <input ng-model="clinfilter" value="attending" type="radio">Attending</input></br>
+    </div>
   </div>
-  <table class="table table-striped" ng-controller="CalCtrl" >
-    <tr ng-repeat="event in cal_events | limitTo:5" ng-controller="FirebaseCtrl" ng-show="open(clinfilter)" >
-      <td> <strong>{{event.title}}</strong> ({{event.id}})</td>
-      <td> {{ event.start | date:"MMMM d, y h:mm" }} - {{event.end | date: "h:mm a"}} </td>
-      <td> <form ng-submit="volunteer(clinfilter)"> <button type="submit">Volunteer</button> </form> </td>
-    </tr>
-  </table>
+    <table class="table table-striped" ng-controller="CalCtrl" >
+      <tr ng-repeat="event in cal_events | limitTo:5" ng-controller="FirebaseCtrl" ng-show="open(clinfilter)" >
+        <td> <strong>{{event.title}}</strong> ({{event.id}})</td>
+        <td> {{ event.start | date:"MMMM d, y h:mm" }} - {{event.end | date: "h:mm a"}} </td>
+        <td> <form ng-submit="volunteer(clinfilter)"> <button type="submit">Volunteer</button> </form> </td>
+      </tr>
+    </table>
 </div>
