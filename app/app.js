@@ -5,6 +5,7 @@ var myApp = angular.module('myApp', [
   'ngRoute',
   'myApp.routing',
   'myApp.datelist',
+  'myApp.mailchimp',
   'myApp.version'
 ]).
 config(['$routeProvider', function($routeProvider) {
