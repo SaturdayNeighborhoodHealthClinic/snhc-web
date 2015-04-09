@@ -7,24 +7,39 @@
 
 <div class="container" ng-init="clinfilter='preclinical'">
   <h1>Upcoming Availiable Dates</h1>
+  
+  <p>Here, we show the upcoming dates that are availiable to each of the groups of volunteers who work with us. Filter by your role, then enter your WUSTL KEY username and click 'Volunteer' to sign up!</p>
+
   <div class="row">
-    <div class="col-lg-8">
-      <div class="input-group">
-        <input type='text' ng-model='uname' class="form-control" aria-describedby="wusm-wustl-addon" placeholder="username">
-        <span class="input-group-addon" id="wusm-wustl.edu">@wusm.wustl.edu</span>
+    <div class="container">
+      <div class="col-md-4 col-md-offset-2">
+        <div class="input-group">
+          <input type='text' ng-model='uname' class="form-control" aria-describedby="wusm-wustl-addon" placeholder="wustl key">
+          <span class="input-group-addon" id="wusm-wustl.edu">@wusm.wustl.edu</span>
+        </div>
+      </div>
+        <div class="btn-group col-md-3">
+          <label class="btn btn-primary" ng-model="clinfilter" btn-radio="'preclinical'">Preclinical</label>
+          <label class="btn btn-primary" ng-model="clinfilter" btn-radio="'clinical'">Clinical</label>
+          <label class="btn btn-primary" ng-model="clinfilter" btn-radio="'attending'">Attending</label>
       </div>
     </div>
-    <div class="btn-group col-lg-4">
-      <input ng-model="clinfilter" value="preclinical" type="radio">Preclinical</input></br>
-      <input ng-model="clinfilter" value="clinical" type="radio">Clinical</input></br>
-      <input ng-model="clinfilter" value="attending" type="radio">Attending</input></br>
-    </div>
   </div>
+
+  <div class="container">
     <table class="table table-striped" ng-controller="CalCtrl" >
-      <tr ng-repeat="event in cal_events | limitTo:5" ng-controller="FirebaseCtrl" ng-show="open(clinfilter)" >
-        <td> <strong>{{event.title}}</strong> ({{event.id}})</td>
-        <td> {{ event.start | date:"MMMM d, y h:mm" }} - {{event.end | date: "h:mm a"}} </td>
-        <td> <form ng-submit="volunteer(clinfilter)"> <button type="submit">Volunteer</button> </form> </td>
-      </tr>
+      <thead>
+        <tr>
+          <th>Event Type</th><th>Event Date</th><th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr ng-repeat="event in cal_events | limitTo:5" ng-controller="FirebaseCtrl" ng-show="open(clinfilter)" >
+          <td> <strong>{{event.title}}</strong> ({{event.id}})</td>
+          <td> {{ event.start | date:"MMMM d, y h:mm" }} - {{event.end | date: "h:mm a"}} </td>
+          <td> <form ng-submit="volunteer(clinfilter)"> <button type="submit">Volunteer</button> </form> </td>
+        </tr>
+      </tbody>
     </table>
+  </div>
 </div>
