@@ -6,15 +6,15 @@
 </div>
 
 <div class="container" ng-init="clinfilter='preclinical'">
+  <h1>Upcoming Availiable Dates</h1>
   <div class="row">
-    <div class="col-lg-9">
-      <h1>Upcoming Availiable Dates</h1>
+    <div class="col-lg-8">
       <div class="input-group">
         <input type='text' ng-model='uname' class="form-control" aria-describedby="wusm-wustl-addon" placeholder="username">
         <span class="input-group-addon" id="wusm-wustl.edu">@wusm.wustl.edu</span>
       </div>
     </div>
-    <div class="btn-group col-lg-3">
+    <div class="btn-group col-lg-4">
       <input ng-model="clinfilter" value="preclinical" type="radio">Preclinical</input></br>
       <input ng-model="clinfilter" value="clinical" type="radio">Clinical</input></br>
       <input ng-model="clinfilter" value="attending" type="radio">Attending</input></br>

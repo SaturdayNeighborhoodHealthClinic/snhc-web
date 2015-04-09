@@ -57,7 +57,9 @@ angular.module('myApp.calcontrol', ['myApp.calService', 'firebase'])
       if( !$scope.open(clinfilter)){
         alert( "The date doesn't look to be availiable. That's all we know." );
         return;
-      } 
+      } else if( !$scope.uname ){
+        alert( "You must enter a username to volunteer." );
+      }
 
       var volunteer_info = $firebaseObject(fbRef.child("users").child($scope.uname).child("type"));
 
@@ -76,6 +78,9 @@ angular.module('myApp.calcontrol', ['myApp.calService', 'firebase'])
                                              .child($scope.event.id)
                                              .child(clinfilter)
                                              .child($scope.uname)));
+            alert( "You've successfully signed up to volunteer on " + $scope.event.start + ".")
+          }).catch(function(error){
+            alert( "We couldn't sign you up. The error was " + error );
           });
         }
       })
