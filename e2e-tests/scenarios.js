@@ -11,21 +11,21 @@ describe('snhc webapp', function() {
     it('should redirect index.html to '+urls.home, function() {
       browser.get('index.html');
       browser.getLocationAbsUrl().then(function(url) {
-          expect(url.split('#')[1]).toBe(urls.home);
+        expect(url).toBe(urls.home);
       });
     });
 
     it('should redirect empty hash fragment to '+urls.home, function() {
       browser.get('');
       browser.getLocationAbsUrl().then(function(url) {
-        expect(url.split('#')[1]).toBe(urls.home);
+        expect(url).toBe(urls.home);
       });
     });
 
     it('should redirect #/asdf to '+urls.home, function() {
       browser.get('#/asdf');
       browser.getLocationAbsUrl().then(function(url) {
-        expect(url.split('#')[1]).toBe(urls.home);
+        expect(url).toBe(urls.home);
       });
     });
 
