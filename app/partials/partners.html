@@ -8,34 +8,40 @@
 
 <div class="container row">
 	<div class="col-md-7">
-		<!--
+		<h1>Subscribe to our weekly e-mails!</h1>
+		<p>Every Monday, the SNHC sends out an e-mail with our most up-to-date schedule for Saturday and Specialty Clinics, as well as other important SNHC news. Sign up below if you or your organization is interested! If you're not sure, you can take a look our <a href="http://us10.campaign-archive1.com/home/?u=21adee5d0c43b4e0c7098526e&id=3176d97149" title="previous campaigns">previous emails</a>.</p>
 		<form name="MailchimpSubscriptionForm" ng-controller="MailchimpSubscriptionCtrl">
 		  <div ng-hide="mailchimp.result === 'success'">
 		    <input class="hidden" type="hidden" ng-model="mailchimp.username" ng-init="mailchimp.username='wustl'">
 		    <input class="hidden" type="hidden" ng-model="mailchimp.dc" ng-init="mailchimp.dc='us10'">
 		    <input class="hidden" type="hidden" ng-model="mailchimp.u" ng-init="mailchimp.u='21adee5d0c43b4e0c7098526e'">
 		    <input class="hidden" type="hidden" ng-model="mailchimp.id" ng-init="mailchimp.id='3176d97149'">
-		    <input type="text" name="fname" ng-model="mailchimp.fname" placeholder="First name">
-		    <input type="text" name="lname" ng-model="mailchimp.lname" placeholder="Last name">
-		    <input type="text" name="mmerge3" ng-model="mailchimp.mmerge3" placeholder="Organization" required>
-		    <input type="email" name="email" ng-model="mailchimp.email" placeholder="Email address" required>
-		    <button ng-disabled="MailchimpSubscriptionForm.$invalid" ng-click="addSubscription(mailchimp)">Join</button>
+		    <div class="form-group col-md-6">
+			    <input type="text" name="fname" ng-model="mailchimp.FNAME" placeholder="First name" class="form-control">
+		    </div> <div class="form-group col-md-6">
+			    <input type="text" name="lname" ng-model="mailchimp.LNAME" placeholder="Last name" class="form-control">
+		    </div> <div class="form-group col-md-6">
+		    <input type="text" name="mmerge3" ng-model="mailchimp.MMERGE3" placeholder="Organization" class="form-control" required>
+		    </div> <div class="form-group col-md-6">
+			    <input type="email" name="email" ng-model="mailchimp.EMAIL" placeholder="Email address" class="form-control" required>
 		    </div>
+		    <button class="btn btn-default" ng-disabled="MailchimpSubscriptionForm.$invalid" ng-click="addSubscription(mailchimp)">Join</button>
 		  </div>
 		 
-		  <!-- Show error message if MailChimp unsuccessfully added the email to the list. ->
-		  <div ng-show="mailchimp.result === 'error'" ng-cloak>
-		    <span ng-bind-html="mailchimp.errorMessage"></span>
+		  <!-- Show error message if MailChimp unsuccessfully added the email to the list. -->
+		  <div ng-show="mailchimp.result === 'error'" ng-cloak class="alert alert-danger">
+		    <span class="danger" ng-bind-html="mailchimp.errorMessage"></span>
 		  </div>
 		 
-		  <!-- Show success message if MailChimp returned successfully. ->
-		  <div ng-show="mailchimp.result === 'success'" ng-cloak>
+		  <!-- Show success message if MailChimp returned successfully. -->
+		  <div ng-show="mailchimp.result === 'success'" ng-cloak class="alert alert-success">
 		    <span ng-bind-html="mailchimp.successMessage"></span>
 		  </div>
 		</form>
-		<p> View<a href="http://us10.campaign-archive1.com/home/?u=21adee5d0c43b4e0c7098526e&id=3176d97149" title="previous campaigns">previous campaigns.</a></p>
+		<div>
+			<p> View </p>
+		</div>
 	</div>
--->
 	<div class="col-md-5">
 	  <div class="fb-page" data-href="https://www.facebook.com/wusmsnhc?fref=ts" data-hide-cover="false" data-show-facepile="true" data-width="550" data-show-posts="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/wusmsnhc?fref=ts"><a href="https://www.facebook.com/wusmsnhc?fref=ts">Washington University Saturday Neighborhood Health Clinic</a></blockquote></div></div>
 	</div>
