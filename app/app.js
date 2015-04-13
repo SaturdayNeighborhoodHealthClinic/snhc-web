@@ -6,7 +6,8 @@ var myApp = angular.module('myApp', [
   'myApp.routing',
   'myApp.datelist',
   'myApp.calcontrol',
-  'ui.bootstrap'
+  'ui.bootstrap',
+  'mailchimp'
 ]).
 config(['$routeProvider', function($routeProvider) {
   $routeProvider.otherwise({redirectTo: '/home'});
@@ -31,4 +32,4 @@ angular.module( 'myApp.calService', [] )
                   // default is to dump events in an arbitrary (but stable) order; we want them ordered by start time.
                   "orderBy" : "startTime"  }
       });
-  })
+  });
