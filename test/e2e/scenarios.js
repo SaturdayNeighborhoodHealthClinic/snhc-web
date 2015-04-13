@@ -88,10 +88,31 @@ describe('snhc webapp', function() {
       expect(element(by.css(".section-header h1")).getText()).toBe("For our Community Partners");
     });
 
-    it('should have a mailchip form', function() {
-      element.all(by.deepCss("label")).then(function(arr) {
-        expect(arr.length).toBe(4);
+    it('should have correct static data for our mailchimp account', function() {
+      var mailchip_data = { "username" : "wustl",
+                            "dc" : "us10",
+                            "u" : "21adee5d0c43b4e0c7098526e",
+                            "id" : "3176d97149" };
+
+      for( var param in mailchip_data ){        
+        var model = element(by.model("mailchimp."+param));
+        expect(model.evaluate("mailchimp."+param)).toBe(mailchip_data[param]);
+      }
+    });
+
+    it('should have two form-groups', function() {
+      element.all(by.css(".form-group")).then(function(models) {
+        expect(models.length).toBe(4);
       });
     });
+
+    it('should have forms to set each of the variable mailchimp recipeint fields', function() {
+      var mailchimp_fields = ["FNAME", "LNAME", "MMERGE3", "EMAIL"];
+      
+      for( var i = 0; i < mailchimp_fields.length; i++ ){
+        expect(element(by.model("mailchimp."+mailchimp_fields[i]))).toBeDefined();
+      }
+    });
+
   });
 });

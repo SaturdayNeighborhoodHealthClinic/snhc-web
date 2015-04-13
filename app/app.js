@@ -5,7 +5,9 @@ var myApp = angular.module('myApp', [
   'ngRoute',
   'myApp.routing',
   'myApp.datelist',
-  'ui.bootstrap'
+  'myApp.mailchimp',
+  'ui.bootstrap',
+  'mailchimp'
 ]).
 config(['$routeProvider', function($routeProvider) {
   $routeProvider.otherwise({redirectTo: '/home'});
