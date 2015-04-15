@@ -2,13 +2,13 @@
 
 /* Controllers */
 
-angular.module('myApp.calcontrol', ['myApp.calService', 'firebase'])
+angular.module('myApp.volunteer', ['myApp.calService', 'firebase'])
   .value('fbURL', "https://blistering-fire-6953.firebaseio.com")
   .value('max_volunteers', { clinical : 3,
                              preclinical : 3,
                              attending : 1 })
   .service('fbRef', function(fbURL) {
-    return new Firebase(fbURL)
+    return new Firebase(fbURL);
   })
   .service('fbo', function( $firebaseObject, fbRef ) {
     return $firebaseObject(fbRef.child("events"));

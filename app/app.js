@@ -5,7 +5,7 @@ var myApp = angular.module('myApp', [
   'ngRoute',
   'myApp.routing',
   'myApp.datelist',
-  'myApp.calcontrol',
+  'myApp.volunteer',
   'ui.bootstrap',
   'mailchimp'
 ]).
