@@ -13,27 +13,8 @@ angular.module('myApp.volunteer', ['myApp.calService', 'firebase'])
   .service('fbo', function( $firebaseObject, fbRef ) {
     return $firebaseObject(fbRef.child("events"));
   })
-  .controller('CalCtrl', function($scope, $window, cal_http ) {
-    cal_http
-    .success(function(data, status, headers, config) {
-      $scope.cal_events = [];
-      for ( var index in data.items ) {
-        // data.times are "events" resources.
-        // API doc: https://developers.google.com/google-apps/calendar/v3/reference/events#resource
-
-        // This dictionary is interpreted by the FullCalendar module to render an appropriate calendar.
-        // API doc: http://fullcalendar.io/docs/event_data/events_array/
-        var event_properties = { title : data.items[index].summary,
-                                 start : data.items[index].start.dateTime,
-                                 end : data.items[index].end.dateTime,
-                                 id : data.items[index].id
-                                };
-        $scope.cal_events.push( event_properties );
-      }
-    })
-    .error(function(data, status, headers, config) {
-      $window.alert("Whoops! We failed to contact the Google Calendar. Response was "+status+". Sorry!");
-    });
+  .controller('CalCtrl', function($scope, cal_events) {
+    $scope.cal_events = cal_events;
   })
   .controller('FirebaseCtrl', function($scope, $firebaseArray, $firebaseObject, fbRef, max_volunteers ){
     $scope.firebase_volunteers = $firebaseObject(fbRef.child("events").child($scope.event.id));
@@ -59,6 +40,7 @@ angular.module('myApp.volunteer', ['myApp.calService', 'firebase'])
         return;
       } else if( !$scope.uname ){
         alert( "You must enter a username to volunteer." );
+        return;
       }
 
       var volunteer_info = $firebaseObject(fbRef.child("users").child($scope.uname).child("type"));
@@ -83,7 +65,7 @@ angular.module('myApp.volunteer', ['myApp.calService', 'firebase'])
             alert( "We couldn't sign you up. The error was " + error );
           });
         }
-      })
+      });
 
     }
   });
