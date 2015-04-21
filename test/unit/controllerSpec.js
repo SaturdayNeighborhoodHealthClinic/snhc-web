@@ -13,11 +13,19 @@ describe('myApp', function() {
       query_data = "success";
     }));
 
-    it('should query Google Calendar at the appropriate URL', function(){
-      httpBackend.whenGET(calendar_url).respond();
-      cal_http.success(function(data, status, headers, config){
-        expect(data).toBe(query_data);
-      });
+    afterEach(function() {
+      httpBackend.verifyNoOutstandingRequest();
     });
+
+    it('should produce the correct Google Calendar url', function() {
+      expect(calendar_url).toBe(
+        "https://www.googleapis.com/calendar/v3/calendars/7eie7k06g255baksfshfhp0m28%40group.calendar.google.com/events");
+    });
+
+    it('should query Google Calendar at the appropriate URL', function(){
+      // If we're querying the incorrect url, we'll get a timeout. Probably?
+      var get_url = httpBackend.whenGET(calendar_url).url;
+    });
+
   });
 });

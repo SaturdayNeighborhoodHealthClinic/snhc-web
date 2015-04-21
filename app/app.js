@@ -21,11 +21,10 @@ angular.module( 'myApp.calService', [] )
     var str = ["https://www.googleapis.com/calendar/v3/calendars", calendar_id, "events"].join("/");
     return str;
   })
-  .service('cal_http',
+  .factory('cal_http',
     // This is the "events list" API call. 
     // https://developers.google.com/google-apps/calendar/v3/reference/events/list
     function( $http, google_key, calendar_url ){
-      console.log(calendar_url);
       return $http({
         url: calendar_url,
         method: "GET",
@@ -38,12 +37,11 @@ angular.module( 'myApp.calService', [] )
                   "orderBy" : "startTime"  }
       });
   })
-  .service('cal_events', function($window, cal_http) {
+  .factory('cal_events', function($window, cal_http) {
     var cal_events = [];
 
     cal_http
       .success(function(data, status, headers, config) {
-        cal_events = [];
         for ( var index in data.items ) {
           // data.times are "events" resources.
           // API doc: https://developers.google.com/google-apps/calendar/v3/reference/events#resource
