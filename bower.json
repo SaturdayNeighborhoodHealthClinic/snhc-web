@@ -1,7 +1,7 @@
 {
   "name": "snhc-web",
   "description": "Web frontend for snhc",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "homepage": "https://github.com/angular/angular-seed",
   "license": "MIT",
   "private": true,
