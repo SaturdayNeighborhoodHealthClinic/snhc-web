@@ -43,6 +43,10 @@ angular.module('myApp.routing', ['ngRoute'])
     templateUrl: 'partials/partners.html',
     controller: 'RoutingCtrl'
   });
+  $routeProvider.when('/resources', {
+    templateUrl: 'partials/resources.html',
+    controller: 'RoutingCtrl'
+  });
   $routeProvider.otherwise({redirectTo: '/home'});
 }])
 
