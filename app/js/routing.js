@@ -47,7 +47,7 @@ angular.module('myApp.routing', ['ngRoute'])
     templateUrl: 'partials/resources.html',
     controller: 'RoutingCtrl'
   });
- $routeProvider.when('/enespañol', {
+ $routeProvider.when('/enespanol', {
     templateUrl: 'partials/enespanol.html',
     controller: 'RoutingCtrl'
   });
