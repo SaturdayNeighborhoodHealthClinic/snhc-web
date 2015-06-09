@@ -47,6 +47,10 @@ angular.module('myApp.routing', ['ngRoute'])
     templateUrl: 'partials/resources.html',
     controller: 'RoutingCtrl'
   });
+ $routeProvider.when('/enespanol', {
+    templateUrl: 'partials/enespanol.html',
+    controller: 'RoutingCtrl'
+  });
   $routeProvider.otherwise({redirectTo: '/home'});
 }])
 
