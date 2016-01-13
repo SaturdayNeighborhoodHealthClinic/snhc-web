@@ -69,33 +69,6 @@ npm start
 
 Now browse to the app at `http://localhost:8000/app/index.html`.
 
-## Directory Layout
-
-```
-app/                    --> all of the source files for the application
-  app.css               --> default stylesheet
-  components/           --> all app specific modules
-    version/              --> version related components
-      version.js                 --> version module declaration and basic "version" value service
-      version_test.js            --> "version" value service tests
-      version-directive.js       --> custom directive that returns the current app version
-      version-directive_test.js  --> version directive tests
-      interpolate-filter.js      --> custom interpolation filter
-      interpolate-filter_test.js --> interpolate filter tests
-  partials/             --> the html partials used in the body
-  js/                   --> the javascript files used to 
-    routing.js            --> the controller logic for the ng-view
-    date-ctrl.js          --> logic for the dynamic google calendar display in services.html
-  app.js                --> main application module
-  index.html            --> app layout file (the main html template file of the app)
-  index-async.html      --> just like index.html, but loads js files asynchronously
-karma.conf.js         --> config file for running unit tests with Karma
-e2e-tests/            --> end-to-end tests
-  protractor-conf.js    --> Protractor config file
-  scenarios.js          --> end-to-end scenarios to be run by Protractor
-update.sh             --> the script used by our server to pull 'master' down from github.
-```
-
 ## Testing
 
 There are two kinds of tests in the snhc-web application: Unit tests and End to End tests.
@@ -244,17 +217,6 @@ Curretly, there is no backend code for this portion of the website. Given the st
 and our control over their configuration, this is unlikely to change in the near future, unless we
 migrate to another hosting solution.
 
-## Continuous Integration
-
-### Travis CI
-
-[Travis CI][travis] is a continuous integration service, which can monitor GitHub for new commits
-to your repository and execute scripts such as building the app or running tests. The angular-seed
-project contains a Travis configuration file, `.travis.yml`, which will cause Travis to run your
-tests when you push to GitHub.
-
-You will need to enable the integration between Travis and GitHub. See the Travis website for more
-instruction on how to do this.
 
 ## Contact
 
