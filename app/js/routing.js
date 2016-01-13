@@ -11,12 +11,8 @@ angular.module('myApp.routing', ['ngRoute'])
     templateUrl: 'partials/physicians.html',
     controller: 'RoutingCtrl'
   });
-  $routeProvider.when('/socialwork', {
-    templateUrl: 'partials/socialwork.html',
-    controller: 'RoutingCtrl'
-  });
-  $routeProvider.when('/occupationaltherapy', {
-    templateUrl: 'partials/occupationaltherapy.html',
+  $routeProvider.when('/communityvolunteers', {
+    templateUrl: 'partials/communityvolunteers.html',
     controller: 'RoutingCtrl'
   });
   $routeProvider.when('/home', {
