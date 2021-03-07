@@ -1,3 +1,5 @@
+**Depricated. New website is found at https://sites.wustl.edu/snhc/.**
+
 # snhc-web: the SNHC web front-end
 
 Our public-facing website. Seeded using the [angular-seed](https://github.com/angular/angular-seed) repository.
